@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "myyield",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-myyield-dev-114621-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/0b1e587a50ac6c506477ee996450ada7bc70fc91"
+}

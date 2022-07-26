@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "myyield",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/theazimjon/Documents/my_yield2/amplify/backend/api/myyield/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-myyield-dev-114621-authRole",
+      "UnauthRoleArn": "arn:aws:iam::057328106542:role/amplify-myyield-dev-114621-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::057328106542:role/amplify-myyield-dev-114621-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-myyield-dev-114621-deployment",
+      "UnauthRoleName": "amplify-myyield-dev-114621-unauthRole",
+      "StackName": "amplify-myyield-dev-114621",
+      "StackId": "arn:aws:cloudformation:us-east-1:057328106542:stack/amplify-myyield-dev-114621/ab833920-0cae-11ed-ba6c-0e1437f0ca65",
+      "AmplifyAppId": "d27oq69yrd98h3"
+    }
+  },
+  "auth": {
+    "myyield106a6ceb": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-myyield-dev-114621-deployment/amplify-cfn-templates/auth/myyield106a6ceb-cloudformation-template.json",
+        "logicalId": "authmyyield106a6ceb"
+      },
+      "lastPushTimeStamp": "2022-07-26T07:03:50.067Z",
+      "output": {
+        "UserPoolId": "us-east-1_EjpcnenXd",
+        "AppClientIDWeb": "3gnnevril16b6eafrvd1fgmo6l",
+        "AppClientID": "3im8gdk1k6onh6cscgoos3c7sa",
+        "IdentityPoolId": "us-east-1:7c130564-2728-41d6-86d4-6061b2c2d9e3",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:057328106542:userpool/us-east-1_EjpcnenXd",
+        "IdentityPoolName": "myyield106a6ceb_identitypool_106a6ceb__dev",
+        "UserPoolName": "myyield106a6ceb_userpool_106a6ceb"
+      },
+      "lastPushDirHash": "Wjp5Z+NFxQQVppNu1TW93rUPgCA="
+    }
+  },
+  "api": {
+    "myyield": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "mtrhrnolvrbtfbq4vrj67bvlmm",
+        "GraphQLAPIEndpointOutput": "https://yfdfnlfapfhj5aviplzqdhjsqq.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-yokwew7ocjghtd6x624ujlfvmi"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-myyield-dev-114621-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apimyyield"
+      },
+      "lastPushTimeStamp": "2022-07-26T07:03:54.575Z",
+      "lastPushDirHash": "QeBi6hE2BYwYHRv/uL1vObXU/CI="
+    }
+  }
+}
